@@ -1,0 +1,16 @@
+<div class="dashboard-navbar-wrapper">
+    <div>
+        <img 
+            class="user-icon" mat-button [matMenuTriggerFor]="menu" 
+            src="../../../assets/Profile-icon.png"
+            alt="Profile icon" 
+        />
+    </div>
+    <div class="user-name">
+        <p>Roberto Carlos</p>
+    </div>
+</div>
+<mat-menu #menu="matMenu" class="mt-2">
+    <button mat-menu-item>Settings <mat-icon>settings</mat-icon> </button>
+    <button mat-menu-item>Logout <mat-icon>exit_to_app</mat-icon></button>
+</mat-menu>
